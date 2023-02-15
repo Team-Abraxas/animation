@@ -1,38 +1,103 @@
-.App {
-  text-align: center;
+.container{
+  width: 100%;
+  height: 100%;
 }
+.content{
+  width: 100px;
+  height: 100px;
+margin: auto;
+  padding: 100px;
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  padding-top: 50px;
+  transform: translateY(70px);
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
 }
 
-.App-link {
-  color: #61dafb;
+.moon{
+  width: 40px;
+  margin: auto;
+    
+}
+.flex-moon{
+  width: 80px ;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+
+}
+#moon3{
+transform: translateX(130px);
+}
+#moon4{
+  transform: translateX(-213px); 
+}
+#moon1{
+
+  transform: translateY(-50px); 
 }
 
-@keyframes App-logo-spin {
+#moon2{
+
+  transform: translateY(50px); 
+}
+/* .flex-moon3{
+transform: rotate(55deg);
+}
+#moon5{
+ transform: translateX(190px);
+ transform: translateY(189px);
+}
+#moon6{ 
+ 
+  transform: translateX(-130px);
+ transform: translateY(-130px);
+
+} */
+.flex-moon3{
+  display: flex;
+  flex-direction: row;
+  
+  transform: rotate(95deg);
+  transform: translateX(-40px);
+  
+}
+div#moon7 {
+  transform: translate(-67px, -55px);
+}
+
+div#moon5 {
+  transform: translate(61px, -45px);}
+
+
+
+ div#moon8 {
+    transform: translate(-65px, 59px);
+}
+
+div#moon6 {
+  transform: translate(63px, 56px);
+}
+
+.vl {
+  border-left: 6px solid green;
+  height: 500px;
+}
+
+.animated {
+  transform: translate(21px, 118px);
+}
+
+.rotate {
+  /* width: 100px; */
+  animation: rotation 2s infinite linear;
+}
+
+@keyframes rotation {
   from {
     transform: rotate(0deg);
   }
   to {
-    transform: rotate(360deg);
+    transform: rotate(359deg);
   }
 }
