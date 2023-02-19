@@ -1,93 +1,55 @@
-.container{
-  width: 100%;
-  height: 100%;
-}
-.content{
-  width: 100px;
-  height: 100px;
-margin: auto;
-  padding: 100px;
 
-  padding-top: 50px;
-  transform: translateY(70px);
+img{
+  align-self: center;
+  justify-self: center;
+}
+
+
+.main{
+  display:grid;
   justify-content: center;
-  align-items: center;
+  align-content: center;
+  width:50vw;
+  height: 100vh;
+
 }
 
+ .main>* {
+  grid-column:1 ;
+  grid-row:1;
+} 
+
+/* main animation */
 .moon{
-  width: 40px;
-  margin: auto;
-    
-}
-.flex-moon{
-  width: 80px ;
-  margin: auto;
-  display: flex;
-  flex-direction: row;
-
-}
-#moon3{
-transform: translateX(130px);
-}
-#moon4{
-  transform: translateX(-213px); 
-}
-#moon1{
-
-  transform: translateY(-50px); 
+  transform:translate(15rem);
+  animation:spinAround 8s linear infinite;
 }
 
-#moon2{
+.main:hover{
+  animation:none;
+}
 
-  transform: translateY(50px); 
-}
-/* .flex-moon3{
-transform: rotate(55deg);
-}
-#moon5{
- transform: translateX(190px);
- transform: translateY(189px);
-}
-#moon6{ 
- 
-  transform: translateX(-130px);
- transform: translateY(-130px);
-
-} */
-.flex-moon3{
-  display: flex;
-  flex-direction: row;
-  
-  transform: rotate(95deg);
-  transform: translateX(-40px);
+@keyframes spinAround {
+  from{transform:rotate(0deg) translate(15rem)}
+  to{transform:rotate(360deg) translate(15rem)}
   
 }
-div#moon7 {
-  transform: translate(-67px, -55px);
+
+a{
+  display:none;
+  text-decoration: none;
+  color:black;
 }
 
-div#moon5 {
-  transform: translate(61px, -45px);}
-
-
-
- div#moon8 {
-    transform: translate(-65px, 59px);
+.moon:hover > a{
+  display:block;
 }
 
-div#moon6 {
-  transform: translate(63px, 56px);
+.main:hover > div {
+  animation-play-state: paused;
 }
 
-.vl {
-  border-left: 6px solid green;
-  height: 500px;
-}
-
-.animated {
-  transform: translate(21px, 118px);
-}
-
+/* center image rotation*/
 .rotate {
   /* width: 100px; */
   animation: rotation 2s infinite linear;
